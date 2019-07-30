@@ -1,5 +1,5 @@
 
-<div class="uk-grid-small uk-child-width-auto" uk-grid uk-countdown="date: 2019-08-04T16:47:24+00:00">
+<div class="uk-grid-small uk-child-width-auto" uk-grid uk-countdown="date: 2019-08-04T10:00:24+00:00">
     <div>
         <div class="uk-countdown-number uk-countdown-days"></div>
         <div class="uk-countdown-label uk-margin-small uk-text-center">Days</div>

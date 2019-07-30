@@ -13,7 +13,7 @@
         @include('components.content_header', ['heading' => 'h1'])
 
 
-        @include('components.frosted_overlay')
+        @include('components.frosted_cover')
 
     </div>
 
