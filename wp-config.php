@@ -6,24 +6,25 @@ if ( file_exists( dirname( __FILE__ ) . '/wp-config-local.php' ) ) {
  	include( dirname( __FILE__ ) . '/wp-config-local.php' );
 } else {
 	// Otherwise use the settings below on staging/production
-	define('WP_HOME', 'http://josh-gallery.ftscorch.com');
-	define('WP_SITEURL', WP_HOME);
+    define('WP_HOME', 'http://allisonjosh.green');
+    define('WP_SITEURL', WP_HOME);
+    
+    // ** MySQL settings ** //
+    /** The name of the database for WordPress */
+    define('DB_NAME', 'allisonj_wpdb');
+    
+    /** MySQL database username */
+    define('DB_USER', 'allisonj_dbuser');
+    
+    /** MySQL database password */
+    define('DB_PASSWORD', '?2k.K61YoRpQ');
+    
+    /** MySQL hostname */
+    define('DB_HOST', 'localhost');
+    
+    /** Define the environment, for Roots/Sage */
+    define('WP_ENV', 'production');
 
-	// ** MySQL settings ** //
-	/** The name of the database for WordPress */
-	define('DB_NAME', 'db_josh-gallery');
-
-	/** MySQL database username */
-	define('DB_USER', 'forge');
-
-	/** MySQL database password */
-	define('DB_PASSWORD', '4S0acP0xO3YZM8T1kGnP');
-
-	/** MySQL hostname */
-	define('DB_HOST', 'localhost');
-
-	/** Define the environment, for Roots/Sage */
-	define('WP_ENV', 'production');
 }
 
 /** Database Charset to use in creating database tables. */
