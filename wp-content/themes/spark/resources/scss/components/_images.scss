@@ -1,0 +1,64 @@
+//
+// Background Images
+//
+
+.bg-image {
+  height: 100%;
+  background: {
+    size: cover;
+    position: center;
+  }
+}
+
+
+//
+// Inline Images
+//
+
+//.image {}
+
+
+//
+// WordPress WYSIWYG image styling
+//
+
+img[class*='wp-image-'] {
+  &.alignleft {
+    float: left;
+    margin-right: 1rem;
+  }
+
+  &.alignright {
+    float: right;
+    margin-left: 1rem;
+  }
+
+  &.aligncenter {
+    display: block;
+    margin: 0 auto 1rem auto;
+  }
+}
+
+figure.wp-caption {
+  margin: 0;
+
+  &.alignleft {
+    float: left;
+    margin: 0 1rem 0 0;
+  }
+
+  &.alignright {
+    float: right;
+    margin: 0 0 0 1rem;
+  }
+
+  &.aligncenter {
+    display: block;
+    margin: 0 auto 1rem auto;
+  }
+
+  .wp-caption-text {
+    font-size: rem-calc(12);
+    font-weight: bold;
+  }
+}
