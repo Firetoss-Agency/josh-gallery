@@ -32,7 +32,7 @@
 
   @include breakpoint(large) {
     overflow: hidden;
-    min-height: 350px;
+    //min-height: 350px;
   }
 
   &[class*='uk-position-top'] {
