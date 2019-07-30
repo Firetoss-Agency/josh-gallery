@@ -1,0 +1,59 @@
+.content-box-content {
+
+  .uk-button-group {
+    flex-wrap: wrap;
+
+    a:not(:first-child) {
+      margin-top: 20px;
+    }
+  }
+
+  @include breakpoint(medium down) {
+    animation: none !important;
+    opacity: 1;
+    visibility: visible !important;
+
+    position: relative !important;
+    margin: 0 !important;
+    width: 100%;
+    overflow: visible;
+
+    .content-header {
+      padding-bottom: 20px;
+    }
+  }
+
+
+  z-index: 1;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+
+  @include breakpoint(large) {
+    overflow: hidden;
+    min-height: 350px;
+  }
+
+  &[class*='uk-position-top'] {
+    margin-top: -50px;
+  }
+
+  &[class*='uk-position-bottom'] {
+    margin-bottom: -50px;
+  }
+}
+
+
+.content-header {
+  z-index: 2;
+  position: relative;
+
+  p:last-child {
+    @include breakpoint(large) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+

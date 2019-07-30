@@ -1,6 +1,4 @@
-<form role="search" method="get" class="search-form" action="{{ esc_url(home_url('/')) }}">
-  <div class="uk-inline">
-    <button class="uk-form-icon uk-form-icon-flip" type="submit" uk-icon="search"></button>
-    <input class="uk-input" id="search" value="{{ get_search_query() }}" type="search" placeholder="Search &hellip;" name="s">
-  </div>
+
+<form role="search" method="get" class="search-form uk-search uk-search-navbar uk-width-1-1" action="{{ esc_url(home_url('/')) }}">
+  <div uk-search-icon></div> <input type="search" class="uk-search-input input-group-field search-field" value="{{ get_search_query() }}" id="search" placeholder="Search &hellip;" name="s" autofocus>
 </form>

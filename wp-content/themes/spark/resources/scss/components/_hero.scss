@@ -1,0 +1,284 @@
+
+.iframe-wrap {
+  height: auto;
+  width: 100%;
+  top: 65%;
+
+  .content-box-wrapper & {
+    top: 50%;
+  }
+
+  &:before {
+    content: '';
+    width: 100%;
+    display: block;
+    padding-top: 56.25%;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.content-box-iframe {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  position: absolute;
+
+  @include breakpoint(medium down) {
+    display: none;
+  }
+}
+
+.layout-hero {
+
+
+  .hero-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-content {
+    z-index: 9;
+
+    .heading {
+      line-height: 1;
+    }
+    h1,
+    h2,
+    p {
+      color: #fff;
+    }
+
+    p {
+      font-size: 20px;
+
+      @include breakpoint(1350) {
+        font-size: 24px;
+      }
+    }
+
+
+    //@include breakpoint(medium down) {
+      //position: relative !important;
+      //transform: none;
+      //width: 100%;
+      //overflow: visible;
+      //box-shadow: none;
+      //margin: 0;
+    //}
+
+    &.hero-xlarge {
+      @include breakpoint(large) {
+        width: 950px !important;
+      }
+      @include breakpoint(xlarge) {
+        width: 1000px !important;
+      }
+    }
+
+    &.hero-large {
+
+      @include breakpoint(large) {
+        width: 500px !important;
+      }
+      @include breakpoint(xlarge) {
+        width: 640px !important;
+      }
+      div.single-trip & {
+
+        @include breakpoint(large) {
+          width: 740px !important;
+        }
+        @include breakpoint(xlarge) {
+          width: 700px !important;
+        }
+      }
+    }
+  }
+
+}
+
+
+.background-frosted {
+
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  filter: blur(0px);
+  top: auto;
+  left: 0;
+
+  //@include breakpoint(medium down) {
+  //  background: linear-gradient(0deg, #333333 0%, rgba(132, 132, 132, 0.85) 100%) !important;
+  //}
+
+  //@include breakpoint(large) {
+  //  .content-box-content.video-content-box & {
+  //
+  //      background-image: none !important;
+  //
+  //    &:after {
+  //      background: linear-gradient(0deg, #333333 calc(10% + 100px), rgba(132, 132, 132, 0.85) 100%) !important;
+  //    }
+  //  }
+  //
+  //  .hero-content.video-hero & {
+  //
+  //    background-image: none !important;
+  //
+  //    &:after {
+  //      background: linear-gradient(270deg, #333333 0%, rgba(132, 132, 132, 0.85) 100%) !important;
+  //    }
+  //  }
+  //}
+
+  position: absolute;
+  background-position: right center;
+  background-size: calc(100vw - 16px);
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+
+
+  //@include breakpoint(large) {
+    height: calc(100% + 10px);
+    width: calc(100% + 10px);
+    filter: blur(5px);
+    top: -10px;
+    left: -10px;
+    z-index: -2;
+  //}
+
+
+  .uk-position-bottom-right & {
+    background-position: calc(100% + 50px) calc(100% - 50px);
+  }
+
+  .uk-position-top-left & {
+    background-position: calc(0% - 40px) calc(0% + 60px);
+  }
+
+  .uk-position-top-right & {
+    background-position: calc(100% + 30px) calc(0% - 20px);
+  }
+  .uk-position-bottom-left & {
+    background-position: calc(100% + 50px) calc(0% + 50px);
+  }
+
+
+
+
+  &:after {
+    content: '';
+    position: absolute;
+
+    //top: auto;
+    bottom: 100%;
+    //left: 0;
+    //height: 50px;
+    //width: 100%;
+
+    //@include breakpoint(large) {
+      height: 120%;
+      width: 120%;
+      top: -10%;
+      left: -10%;
+    //}
+
+    //background: linear-gradient(0deg, #C44A37 0%, rgba(196, 74, 55, 0) 100%);
+
+    //@include breakpoint(large) {
+      background: linear-gradient(0deg, #C44A37 calc(10% + 100px), rgba(196, 74, 55, 0.5) 100%);
+
+    //}
+
+    [class*='uk-position-top'] & {
+
+      background: linear-gradient(0deg, #C44A37 0%, rgba(196, 74, 55, 0) 100%);
+
+      @include breakpoint(large) {
+        background: linear-gradient(180deg, #C44A37 calc(10% + 100px), rgba(196, 74, 55, 0.5) 100%);
+        top: 0;
+      }
+    }
+
+  }
+
+
+  .layout-hero & {
+
+    //background-color: #333333;
+
+
+    @include breakpoint(medium down) {
+      width:100%;
+    }
+    //@include breakpoint(large) {
+
+    &:after {
+      //background: linear-gradient(0deg, #333333 0%, rgba(132, 132, 132, 0) 100%);
+
+
+      //@include breakpoint(large) {
+        background: linear-gradient(270deg, rgba(51, 51, 51, 1) 0%, rgba(132, 132, 132, 0.5) 100%);
+
+
+      //}
+    }
+  }
+}
+
+
+.uk-box-shadow {
+  box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.5);
+}
+
+
+.heading {
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #462800;
+}
+
+.flipped svg {
+  transform: rotate(180deg);
+}
+
+
+@media screen and (max-width: 1370px) and (min-width: 960px) {
+  h1, .uk-h1 {
+    font-size: 3.375rem;
+  }
+  h2, .uk-h2 {
+    font-size: 2.25rem;
+  }
+  .uk-padding-large {
+    padding: 45px 45px;
+  }
+  .uk-width-xxlarge {
+    width: 500px;
+  }
+  .uk-button {
+    padding: 0 30px;
+    vertical-align: middle;
+    font-size: 16px;
+    line-height: 42px;
+  }
+}
+
+
+.uk-countdown {
+  color:#fff;
+  justify-content: center;
+  > div:last-child {
+    min-width: 135px;
+  }
+}

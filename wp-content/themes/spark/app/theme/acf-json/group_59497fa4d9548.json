@@ -3,6 +3,22 @@
     "title": "Global - Analytics",
     "fields": [
         {
+            "key": "field_5963df8c76089",
+            "label": "Global",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
             "key": "field_5963e13ef8019",
             "label": "",
             "name": "",
@@ -92,7 +108,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 1,
+    "active": true,
     "description": "",
-    "modified": 1500474689
+    "modified": 1564499011
 }

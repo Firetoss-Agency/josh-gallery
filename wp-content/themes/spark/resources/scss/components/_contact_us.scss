@@ -1,0 +1,108 @@
+.contact-us-wrapper {
+
+  @include breakpoint(tablet down) {
+    padding-top: 100px;
+  }
+
+
+
+  &:after {
+    content: '' !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(270deg, rgba(28, 25, 20, 8) 0%, rgba(28, 25, 20, 0.8) 100%);
+
+
+    @include breakpoint(large) {
+      background: linear-gradient(270deg, rgba(28, 25, 20, 0.8) 0%, rgba(32, 32, 32, 0) 100%);
+    }
+  }
+
+  .heading,
+  p {
+    text-shadow:0 0 20px rgba(0, 0, 0, 0.5);
+  }
+
+
+  .contact-phone {
+    margin: 30px 0;
+
+    a {
+      font-weight: bold;
+      letter-spacing: -0.5px;
+
+      font-size: 20px;
+      vertical-align: bottom;
+      text-transform: capitalize;
+
+      @include breakpoint(medium) {
+        font-size: 32px;
+      }
+
+      @include breakpoint(large) {
+        font-size: 36px;
+      }
+    }
+
+
+    svg {
+
+      @include breakpoint(medium) {
+        width: 50px;
+      }
+
+      @include breakpoint(large) {
+        width: 60px;
+      }
+    }
+
+
+    i {
+      transform: rotate(10deg);
+      display: inline-block;
+      vertical-align: text-top;
+      padding-right: 16px;
+    }
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+
+  .contact-gform {
+
+    div.gform_wrapper {
+      margin: 0;
+      padding-top: 5px;
+      clear: both;
+
+      .gform_footer {
+        text-align: right;
+      }
+
+
+      input {
+        margin-top: 0;
+
+        &.gform_button {
+          background-color: #C44A37;
+          border: none;
+          color: #FFFFFF;
+          font-family: Montserrat;
+          font-size: 16px;
+          font-weight: bold;
+          line-height: 19px;
+          padding: 20px 45px;
+        }
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+

@@ -1,0 +1,94 @@
+{
+    "key": "group_5c8672e889741",
+    "title": "Settings - Padding",
+    "fields": [
+        {
+            "key": "field_5c8673bfb25e0",
+            "label": "Padding",
+            "name": "padding",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "hide_label": 0,
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_5c8672e88d59a",
+                    "label": "Padding",
+                    "name": "padding",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "hide_label": 0,
+                    "choices": {
+                        "uk-padding": "Default",
+                        "uk-padding-small": "Small",
+                        "uk-padding-large": "Large"
+                    },
+                    "allow_null": 1,
+                    "default_value": "",
+                    "layout": "horizontal",
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_5c8673170a8d2",
+                    "label": "Remove",
+                    "name": "remove",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "hide_label": 0,
+                    "choices": {
+                        "uk-padding-remove": "All",
+                        "uk-padding-remove-top": "Top",
+                        "uk-padding-remove-bottom": "Bottom",
+                        "uk-padding-remove-left": "Left",
+                        "uk-padding-remove-right": "Right",
+                        "uk-padding-remove-vertical": "Vertical",
+                        "uk-padding-remove-horizontal": "Horizontal"
+                    },
+                    "allow_null": 1,
+                    "default_value": "",
+                    "layout": "horizontal",
+                    "return_format": "value"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "modified": 1564499013
+}

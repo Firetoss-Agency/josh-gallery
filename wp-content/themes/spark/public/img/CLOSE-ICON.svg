@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="131px" height="132px" viewBox="0 0 131 132" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group 7 Copy[1X]</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-44.5%" y="-44.1%" width="189.0%" height="188.2%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="12.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="REMOTE-RECREATION-—-GALLERY-SECTION-—-ON-CLICK-EFFECTS" transform="translate(-1465.000000, -98.000000)" stroke="#F0F0F1" stroke-width="6">
+            <g id="Group-7-Copy" filter="url(#filter-1)" transform="translate(1530.792154, 161.792154) rotate(-45.000000) translate(-1530.792154, -161.792154) translate(1471.792154, 102.292154)">
+                <path d="M0,59.9431575 L117.175807,59.9431575 L0,59.9431575 Z" id="Stroke-1-Copy-3" transform="translate(58.587903, 59.943158) rotate(-180.000000) translate(-58.587903, -59.943158) "></path>
+                <path d="M0,59.5 L117.175807,59.5 L0,59.5 Z" id="Stroke-1-Copy-4" transform="translate(58.587903, 59.500000) rotate(-270.000000) translate(-58.587903, -59.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
