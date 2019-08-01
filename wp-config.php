@@ -6,7 +6,7 @@ if ( file_exists( dirname( __FILE__ ) . '/wp-config-local.php' ) ) {
  	include( dirname( __FILE__ ) . '/wp-config-local.php' );
 } else {
 	// Otherwise use the settings below on staging/production
-    define('WP_HOME', 'http://allisonjosh.green');
+    define('WP_HOME', 'https://allisonjosh.green');
     define('WP_SITEURL', WP_HOME);
     
     // ** MySQL settings ** //
@@ -44,7 +44,7 @@ define('NONCE_SALT',       'pjASL8fPDfeEOIB5jie20Y9BjRT3KZmahUdlNUHWugSFVl9EKJvS
 
 $table_prefix = 'ft_';
 
-define( 'WP_DEBUG', false );
+define( 'WP_DEBUG', true );
 define( 'WP_DEBUG_LOG', false );
 define( 'AUTOMATIC_UPDATER_DISABLED', false );
 define( 'WP_AUTO_UPDATE_CORE', true );
