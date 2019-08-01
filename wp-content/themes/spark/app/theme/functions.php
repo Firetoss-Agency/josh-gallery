@@ -29,6 +29,7 @@ function mix($asset)
 
 function main_class()
 {
+    global $post;
 	$query = get_queried_object();
 	$page_class = 'default';
 

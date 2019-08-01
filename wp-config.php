@@ -6,7 +6,7 @@ if ( file_exists( dirname( __FILE__ ) . '/wp-config-local.php' ) ) {
  	include( dirname( __FILE__ ) . '/wp-config-local.php' );
 } else {
 	// Otherwise use the settings below on staging/production
-    define('WP_HOME', 'https://allisonjosh.green');
+    define('WP_HOME', 'http://allisonjosh.green');
     define('WP_SITEURL', WP_HOME);
     
     // ** MySQL settings ** //
