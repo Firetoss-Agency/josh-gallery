@@ -44,7 +44,7 @@ define('NONCE_SALT',       'pjASL8fPDfeEOIB5jie20Y9BjRT3KZmahUdlNUHWugSFVl9EKJvS
 
 $table_prefix = 'ft_';
 
-define( 'WP_DEBUG', true );
+define( 'WP_DEBUG', false );
 define( 'WP_DEBUG_LOG', false );
 define( 'AUTOMATIC_UPDATER_DISABLED', false );
 define( 'WP_AUTO_UPDATE_CORE', true );
