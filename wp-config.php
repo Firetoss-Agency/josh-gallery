@@ -52,6 +52,14 @@ define( 'WP_AUTO_UPDATE_CORE', true );
 
 /* That's all, stop editing! Happy blogging. */
 
+define( 'AS3CF_SETTINGS', serialize( array(
+    'provider' => 'aws',
+    'access-key-id' => 'AKIA2UODEDUNM5TYEFE6',
+    'secret-access-key' => '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',
+) ) );
+
+
+
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');

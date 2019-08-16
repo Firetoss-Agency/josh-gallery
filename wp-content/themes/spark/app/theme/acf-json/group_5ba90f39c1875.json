@@ -15,11 +15,9 @@
                 "class": "",
                 "id": ""
             },
-            "hide_label": 0,
             "choices": {
                 "upload": "Upload",
-                "category": "Category",
-                "tag": "Tag"
+                "folder": "Folder"
             },
             "allow_null": 0,
             "default_value": "",
@@ -63,40 +61,9 @@
             "preview_size": "medium"
         },
         {
-            "key": "field_5cd9815539375",
-            "label": "Gallery Category",
-            "name": "gallery_category",
-            "type": "taxonomy",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": [
-                [
-                    {
-                        "field": "field_5cd9810539374",
-                        "operator": "==",
-                        "value": "category"
-                    }
-                ]
-            ],
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "hide_label": 0,
-            "taxonomy": "attachment_category",
-            "field_type": "checkbox",
-            "add_term": 1,
-            "save_terms": 0,
-            "load_terms": 0,
-            "return_format": "id",
-            "multiple": 0,
-            "allow_null": 0
-        },
-        {
             "key": "field_5cd9816539376",
-            "label": "Gallery Tag",
-            "name": "gallery_tag",
+            "label": "Gallery Folder",
+            "name": "gallery_folder",
             "type": "taxonomy",
             "instructions": "",
             "required": 0,
@@ -105,7 +72,7 @@
                     {
                         "field": "field_5cd9810539374",
                         "operator": "==",
-                        "value": "tag"
+                        "value": "folder"
                     }
                 ]
             ],
@@ -114,8 +81,7 @@
                 "class": "",
                 "id": ""
             },
-            "hide_label": 0,
-            "taxonomy": "attachment_tag",
+            "taxonomy": "nt_wmc_folder",
             "field_type": "checkbox",
             "add_term": 1,
             "save_terms": 0,
@@ -140,7 +106,7 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": false,
+    "active": 0,
     "description": "",
-    "modified": 1564499012
+    "modified": 1565986126
 }

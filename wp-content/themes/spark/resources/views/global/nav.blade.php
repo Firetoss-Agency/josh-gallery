@@ -18,7 +18,7 @@
     </div>
     @if(has_nav_menu('primary_navigation'))
       <div class="uk-navbar-right uk-flex-top">
-        <ul class="uk-navbar-nav uk-visible{{ $breakpoint }}">
+        <ul class="uk-navbar-nav uk-hidden">
           @php
             wp_nav_menu([
               'items_wrap'     => '%3$s',
@@ -27,7 +27,7 @@
             ]);
           @endphp
         </ul>
-        <a class="uk-navbar-toggle uk-hidden{{ $breakpoint }}" uk-toggle uk-navbar-toggle-icon href="#offcanvas-nav"></a>
+        <a class="uk-navbar-toggle uk-position-top-right uk-position-small" uk-toggle uk-navbar-toggle-icon href="#offcanvas-nav"></a>
       </div>
     @endif
   </nav>

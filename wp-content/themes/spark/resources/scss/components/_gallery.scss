@@ -20,7 +20,7 @@ ul.uk-slider-items iframe {
   .ft-prev,
   .slide-item,
   .slide-item * {
-    cursor: none;
+    //cursor: none;
   }
 
   .ft-prev, .ft-next {
@@ -52,7 +52,7 @@ ul.uk-slider-items iframe {
 .ft-masonry {
 
   padding-bottom: 150px;
-  cursor: none;
+  //cursor: none;
   max-width: 2000px;
   margin: 0 auto;
 
@@ -60,19 +60,60 @@ ul.uk-slider-items iframe {
     display: flex;
     align-content: center;
     justify-content: center;
-    width: calc(100% / 3);
+    width: calc(100% / 2);
     background: #eee;
-    box-shadow: inset 0 0 2px #fff;
+    padding: 2px;
+    box-sizing: border-box;
 
+    @include breakpoint(small) {
+      width: calc(100% / 3);
+    }
+    @include breakpoint(medium) {
+
+      width: calc(100% / 4);
+    }
     @include breakpoint(large) {
       width: calc(100% / 5);
     }
+
+    @include breakpoint(xlarge) {
+      width: calc(100% / 6);
+    }
+
+
     a {
       width: 100% !important;
     }
     &,
     * {
-      cursor: none;
+      //cursor: none;
     }
   }
+}
+
+
+.uk-offcanvas-bar {
+  opacity: 1;
+}
+
+a.uk-navbar-toggle.uk-position-top-right.uk-navbar-toggle-icon.uk-icon {
+  z-index: 99;
+  background: rgba( 255, 255, 255, .85);
+  border-radius: 50%;
+  min-height: 50px;
+
+  &:hover {
+    background: rgba( 255, 255, 255, 1);
+  }
+}
+
+nav#offcanvas-nav ul.uk-nav-parent-icon > li.menu-item > span a {
+  font-weight: 100;
+  letter-spacing: 1px;
+  font-size: 2rem;
+}
+
+nav#offcanvas-nav ul.uk-nav-parent-icon > li.menu-item + li.menu-item > span {
+  border-top: 2px groove rgba(100, 100, 100, 0.5);
+  margin-top: 4px;
 }
