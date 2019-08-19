@@ -1,28 +1,24 @@
 jQuery(function() {
-	var el_notice, msg_id = el_notice, btn_dismiss;
+	var el_notice, msg_id = el_notice, btn_dismiss, btn_dismiss_wp;
 
 	// Display the notice after the page was loaded.
 	function initialize() {
-		if (jQuery(".frash-notice:visible").length) {
-			// Free plugin already displayed a notification...
-			return;
-		}
-		if ( jQuery(".frash-notice.active").length) {
-			// Some other premium plugin already displayed a notification...
-			return;
-		}
 
-		el_notice = jQuery(".frash-notice");
+		el_notice = jQuery(".wdp-notice");
 		msg_id = el_notice.find("input[name=msg_id]").val();
-		btn_dismiss = el_notice.find(".frash-notice-dismiss");
-
-		// Mark this notification "active" before it's visible to avoid duplicates.
-		el_notice.addClass("active");
+		btn_dismiss = el_notice.find(".wdp-notice-dismiss");
+		btn_dismiss_wp = el_notice.find(".notice-dismiss");
 
 		// Dismiss the notice without any action.
 		btn_dismiss.click(function(ev) {
 			ev.preventDefault();
-			notify_wordpress("wdev_notice_dismiss", btn_dismiss.data("msg"));
+			dismiss_dash_notice("wdev_notice_dismiss");
+		});
+
+		// Dismiss the notice without any action.
+		btn_dismiss_wp.click(function(ev) {
+			ev.preventDefault();
+			dismiss_dash_notice("wdev_notice_dismiss");
 		});
 
 		// Display the notification.
@@ -30,7 +26,7 @@ jQuery(function() {
 	}
 
 	// Hide the notice after a CTA button was clicked
-	function remove_notice() {
+	function remove_dash_notice() {
 		el_notice.fadeTo(100 , 0, function() {
 			el_notice.slideUp(100, function() {
 				el_notice.remove();
@@ -39,11 +35,10 @@ jQuery(function() {
 	}
 
 	// Notify WordPress about the users choice and close the message.
-	function notify_wordpress(action, message) {
+	function dismiss_dash_notice(action) {
 		var ajax_data = {};
 
 		if ('0' !== msg_id) {
-			el_notice.attr("data-message", message);
 			el_notice.addClass("loading");
 
 			ajax_data.msg_id = msg_id;
@@ -51,10 +46,10 @@ jQuery(function() {
 			jQuery.post(
 				window.ajaxurl,
 				ajax_data,
-				remove_notice
+				remove_dash_notice
 			);
 		} else {
-			remove_notice();
+			remove_dash_notice();
 		}
 	}
 
