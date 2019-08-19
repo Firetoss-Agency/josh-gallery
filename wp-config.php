@@ -17,7 +17,7 @@ if ( file_exists( dirname( __FILE__ ) . '/wp-config-local.php' ) ) {
     define('DB_USER', 'allisonjosh_dbuser');
     
     /** MySQL database password */
-    define('DB_PASSWORD', '?2k.K61YoRpQ');
+    define('DB_PASSWORD', '6N#20g+%o(kf');
     
     /** MySQL hostname */
     define('DB_HOST', 'localhost');
