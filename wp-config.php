@@ -11,10 +11,10 @@ if ( file_exists( dirname( __FILE__ ) . '/wp-config-local.php' ) ) {
     
     // ** MySQL settings ** //
     /** The name of the database for WordPress */
-    define('DB_NAME', 'allisonj_wpdb');
+    define('DB_NAME', 'allisonjosh_wpdb');
     
     /** MySQL database username */
-    define('DB_USER', 'allisonj_dbuser');
+    define('DB_USER', 'allisonjosh_dbuser');
     
     /** MySQL database password */
     define('DB_PASSWORD', '?2k.K61YoRpQ');
