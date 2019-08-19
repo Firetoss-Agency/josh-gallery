@@ -1,6 +1,6 @@
 @set($size = $size ? $size :  get_sub_field('hero_size'))
 
-<div class="hero-wrapper uk-inline uk-cover-container uk-width-1-1"  uk-height-viewport >
+<div class="hero-wrapper uk-inline uk-cover-container uk-background-bottom-center uk-width-1-1"  uk-height-viewport >
 
     @include('components.cover_image')
 

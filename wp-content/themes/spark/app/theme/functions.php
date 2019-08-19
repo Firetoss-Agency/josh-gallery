@@ -279,3 +279,14 @@ function ft_rgba($color, $opacity = false) {
 }
 
 
+
+
+add_image_size( 'xlarge', 2240, 2240 );
+
+// Register the three useful image sizes for use in Add Media modal
+add_filter( 'image_size_names_choose', 'wpshout_custom_sizes' );
+function wpshout_custom_sizes( $sizes ) {
+    return array_merge( $sizes, array(
+        'xlarge' => __( 'Extra Large' ),
+    ) );
+}

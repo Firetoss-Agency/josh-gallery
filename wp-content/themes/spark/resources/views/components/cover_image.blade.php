@@ -1,6 +1,6 @@
 @php
     $args = ft_get_sub_fields(['cover_image','responsive']);
-    $srcset = wp_get_attachment_image_srcset( $args->cover_image['id']);
+    $srcset = wp_get_attachment_image_srcset( $args->cover_image['id'], 'xlarge');
 
 @endphp
 
