@@ -2,6 +2,7 @@
 .idea
 node_modules
 npm-debug.log
+wp-config.php
 wp-config-local.php
 wp-content/themes/twenty*
 wp-content/plugins/akismet
